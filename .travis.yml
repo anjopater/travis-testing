@@ -2,9 +2,8 @@ language: node_js
 node_js:
  - '10'
 env:
-  global:
-    - CI_API = true
-    - CI_APP = true
+    - CI_API=true
+    - CI_APP=true
   directories:
     - api/node_modules
     - app/node_modules  
