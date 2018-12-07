@@ -7,7 +7,7 @@
     "jshint": "^2.9.6"
   },
   "scripts": {
-    "test": "jshint hello.js"
+    "test": "jshint index.js"
   },
   "author": "",
   "license": "ISC"
