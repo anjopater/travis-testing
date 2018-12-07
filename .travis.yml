@@ -2,7 +2,6 @@ language: node_js
 node_js:
  - '10'
 env:
-  global:
     - CI_API = true
     - CI_APP = true
   directories:
@@ -17,7 +16,7 @@ env:
       - master
 before_install:
  - echo $CI_API
- - echo CI_APP
+ - echo $CI_APP
 install:
   - | 
     if [ $CI_API == true ]; then 
