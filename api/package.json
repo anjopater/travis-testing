@@ -1,0 +1,14 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "jshint": "^2.9.6"
+  },
+  "scripts": {
+    "test": "jshint hello.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
