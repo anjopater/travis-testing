@@ -22,5 +22,3 @@ install:
 script:
   - if [ $CI_API == true ]; then cd "$TRAVIS_BUILD_DIR/api" && npm t; fi
   - if [ $CI_APP == true ]; then cd "$TRAVIS_BUILD_DIR/app" && npm t; fi
-
-   - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./travis/run_on_pull_requests; fi'
