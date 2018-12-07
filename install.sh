@@ -1,4 +1,4 @@
-echo $CI_API
+echo "heyyyy"
 
 if [ "$CI_API" == true ]; then 
     cd "$TRAVIS_BUILD_DIR/api" && npm i;    
