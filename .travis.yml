@@ -20,5 +20,5 @@ install:
   - if [ $CI_API == true ]; then cd "$TRAVIS_BUILD_DIR/api" && npm i; fi
   - if [ $CI_APP == true ]; then cd "$TRAVIS_BUILD_DIR/app" && npm i; fi
 script:
-  - if [ $CI_API == true ]; then echo "scrip1" && cd "$TRAVIS_BUILD_DIR/api" && npm t; fi
-  - if [ $CI_APP == true ]; then echo "scrip2" && cd "$TRAVIS_BUILD_DIR/app" && npm t; fi
+  - if [ $CI_API == true ]; then  1/0 ; fi
+  - if [ $CI_APP == true ]; then  cd "$TRAVIS_BUILD_DIR/app" && npm t; fi
