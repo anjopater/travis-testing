@@ -10,8 +10,8 @@ env:
     - app/node_modules  
   cache:
     directories:
-      - app/node_modules
       - api/node_modules
+      - app/node_modules
   branches:
     only:
       - master
@@ -20,5 +20,5 @@ install:
   - if [ $CI_API == true ]; then cd "$TRAVIS_BUILD_DIR/api" && npm i; fi
   - if [ $CI_APP == true ]; then cd "$TRAVIS_BUILD_DIR/app" && npm i; fi
 script:
-  - if [ $CI_API == true ]; then cd "$TRAVIS_BUILD_DIR/api" && CI=true npm t; fi
-  - if [ $CI_APP == true ]; then cd "$TRAVIS_BUILD_DIR/app" && CI=true npm t; fi
+  - if [ $CI_API == true ]; then cd "$TRAVIS_BUILD_DIR/api" npm t; fi
+  - if [ $CI_APP == true ]; then cd "$TRAVIS_BUILD_DIR/app" npm t; fi
