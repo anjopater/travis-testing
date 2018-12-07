@@ -1,0 +1,14 @@
+{
+  "name": "travis-test",
+  "version": "1.0.0",
+  "description": "test travis and github",
+  "main": "hello.js",
+  "devDependencies": {
+    "jshint": "^2.9.6"
+  },
+  "scripts": {
+    "test": "jshint hello.js"
+  },
+  "author": "antonio",
+  "license": "ISC"
+}
