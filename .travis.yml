@@ -15,7 +15,9 @@ env:
   branches:
     only:
       - master
-    
+before_install:
+ - echo $CI_API
+ - echo CI_APP
 install:
   - | 
     if [ $CI_API == true ]; then 
